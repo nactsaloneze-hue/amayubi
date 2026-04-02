@@ -6,21 +6,20 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>指圧サロン あまゆび｜桐生市</title>
 <style>
-  *{margin:0;padding:0;box-sizing:border-box;}
-  :root{
-    --bg:#111111;
-    --bg2:#1a1a1a;
-    --bg3:#222222;
-    --gold:#c1a373;
-    --gold2:#e8d5b0;
-    --gold3:#8a6f4e;
-    --text:#e8e0d4;
-    --muted:#9e9080;
-  }
-  html{scroll-behavior:smooth;}
-  body{background:var(--bg);color:var(--text);font-family:'Hiragino Mincho ProN','Yu Mincho','游明朝','MS Mincho',serif;line-height:1.8;}
+*{margin:0;padding:0;box-sizing:border-box;}
+:root{
+--bg:#111111;
+--bg2:#1a1a1a;
+--bg3:#222222;
+--gold:#c1a373;
+--gold2:#e8d5b0;
+--gold3:#8a6f4e;
+--text:#e8e0d4;
+--muted:#9e9080;
+}
+html{scroll-behavior:smooth;}
+body{background:var(--bg);color:var(--text);font-family:'Hiragino Mincho ProN','Yu Mincho','游明朝','MS Mincho',serif;line-height:1.8;}
 
-/* NAV */
 nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(17,17,17,0.95);border-bottom:1px solid var(–gold3);padding:0 24px;}
 .nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:60px;}
 .nav-logo{color:var(–gold);font-size:1.1rem;letter-spacing:0.15em;text-decoration:none;}
@@ -30,7 +29,6 @@ nav{position:fixed;top:0;width:100%;z-index:100;background:rgba(17,17,17,0.95);b
 .nav-line-btn{background:transparent;border:1px solid var(–gold3);color:var(–gold);padding:6px 16px;font-size:0.78rem;letter-spacing:0.1em;cursor:pointer;text-decoration:none;transition:all 0.3s;}
 .nav-line-btn:hover{background:var(–gold);color:#111;}
 
-/* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding-top:60px;}
 .hero-bg{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 40%,#2a1f0f 0%,#111111 70%);z-index:0;}
 .hero-deco{position:absolute;inset:0;z-index:0;overflow:hidden;}
@@ -53,14 +51,12 @@ h1{font-size:clamp(2.2rem,6vw,3.8rem);color:var(–gold);letter-spacing:0.12em;l
 .hero-scroll::after{content:’’;display:block;width:1px;height:40px;background:var(–gold3);margin:8px auto 0;animation:scrolldown 2s ease-in-out infinite;}
 @keyframes scrolldown{0%{opacity:0;transform:scaleY(0);transform-origin:top;}50%{opacity:1;}100%{opacity:0;transform:scaleY(1);transform-origin:top;}}
 
-/* SECTIONS */
 section{padding:100px 24px;}
 .section-inner{max-width:900px;margin:0 auto;}
 .section-label{display:block;font-size:0.68rem;letter-spacing:0.35em;color:var(–gold3);margin-bottom:12px;text-transform:uppercase;}
 .section-title{font-size:clamp(1.6rem,4vw,2.4rem);color:var(–gold);font-weight:400;letter-spacing:0.1em;margin-bottom:48px;line-height:1.4;}
 .divider{width:48px;height:1px;background:var(–gold3);margin:24px 0;}
 
-/* STORY */
 #story{background:var(–bg);}
 .story-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
 .story-img{border:1px solid var(–gold3);overflow:hidden;position:relative;aspect-ratio:3/4;background:var(–bg3);display:flex;align-items:center;justify-content:center;}
@@ -71,7 +67,6 @@ section{padding:100px 24px;}
 .badge-row{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px;}
 .badge{border:1px solid var(–gold3);padding:8px 16px;font-size:0.78rem;color:var(–gold);letter-spacing:0.1em;}
 
-/* FEATURES */
 #features{background:var(–bg2);}
 .features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;}
 .feature-card{background:var(–bg3);padding:40px 28px;text-align:center;position:relative;overflow:hidden;transition:transform 0.3s;}
@@ -82,7 +77,6 @@ section{padding:100px 24px;}
 .feature-title{font-size:1rem;color:var(–gold);letter-spacing:0.1em;margin-bottom:12px;}
 .feature-text{font-size:0.83rem;color:var(–muted);line-height:1.9;}
 
-/* STATS */
 #stats{background:var(–bg);border-top:1px solid var(–bg3);border-bottom:1px solid var(–bg3);}
 .stats-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(–bg3);}
 .stat-card{background:var(–bg);padding:48px 24px;text-align:center;}
@@ -90,7 +84,6 @@ section{padding:100px 24px;}
 .stat-unit{font-size:1rem;color:var(–gold3);}
 .stat-label{font-size:0.8rem;color:var(–muted);margin-top:12px;letter-spacing:0.1em;}
 
-/* MENU */
 #menu{background:var(–bg2);}
 .menu-card{background:var(–bg3);border:1px solid var(–bg3);margin-bottom:2px;display:flex;align-items:center;justify-content:space-between;padding:28px 32px;transition:border-color 0.3s;}
 .menu-card:hover{border-color:var(–gold3);}
@@ -102,7 +95,6 @@ section{padding:100px 24px;}
 .options-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;}
 .option-item{background:var(–bg3);padding:16px 20px;font-size:0.85rem;color:var(–muted);border-left:2px solid var(–gold3);}
 
-/* GALLERY */
 #gallery{background:var(–bg);}
 .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;}
 .gallery-item{aspect-ratio:1;overflow:hidden;background:var(–bg3);display:flex;align-items:center;justify-content:center;cursor:pointer;position:relative;}
@@ -111,7 +103,6 @@ section{padding:100px 24px;}
 .gallery-placeholder{font-size:2.5rem;color:var(–muted);}
 .gallery-upload-hint{font-size:0.72rem;color:var(–muted);margin-top:4px;text-align:center;}
 
-/* ACCESS */
 #access{background:var(–bg2);}
 .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;}
 .info-list{list-style:none;}
@@ -123,20 +114,17 @@ section{padding:100px 24px;}
 .map-emoji{font-size:3rem;}
 .map-link{color:var(–gold);font-size:0.82rem;letter-spacing:0.1em;text-decoration:none;border-bottom:1px solid var(–gold3);padding-bottom:2px;}
 
-/* CTA */
 #cta{background:radial-gradient(ellipse at 50% 50%,#2a1f0f 0%,var(–bg) 70%);text-align:center;}
 .cta-inner{max-width:600px;margin:0 auto;}
 .cta-inner h2{font-size:clamp(1.4rem,4vw,2rem);color:var(–gold);letter-spacing:0.1em;margin-bottom:20px;font-weight:400;}
 .cta-inner p{color:var(–muted);margin-bottom:40px;font-size:0.92rem;line-height:2;}
 .cta-btns{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 
-/* FOOTER */
 footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;text-align:center;}
 .footer-inner{max-width:900px;margin:0 auto;}
 .footer-logo{color:var(–gold);font-size:1.2rem;letter-spacing:0.2em;margin-bottom:12px;}
 .footer-copy{color:var(–muted);font-size:0.72rem;letter-spacing:0.1em;margin-top:24px;}
 
-/* ADMIN PANEL */
 #admin-toggle{position:fixed;bottom:20px;right:20px;z-index:999;background:var(–bg3);border:1px solid var(–gold3);color:var(–gold);width:44px;height:44px;border-radius:50%;font-size:1.1rem;cursor:pointer;display:flex;align-items:center;justify-content:center;opacity:0.6;transition:opacity 0.3s;}
 #admin-toggle:hover{opacity:1;}
 #admin-panel{position:fixed;bottom:72px;right:20px;z-index:998;background:#1a1a1a;border:1px solid var(–gold3);padding:24px;width:320px;display:none;max-height:80vh;overflow-y:auto;}
@@ -153,7 +141,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
 .admin-preview{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px;}
 .admin-preview img{width:60px;height:60px;object-fit:cover;border:1px solid var(–gold3);}
 
-/* RESPONSIVE */
 @media(max-width:768px){
 .story-grid,.access-grid{grid-template-columns:1fr;}
 .features-grid{grid-template-columns:1fr;}
@@ -168,8 +155,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
 </head>
 <body>
 
-<!-- NAV -->
-
 <nav>
   <div class="nav-inner">
     <a href="#" class="nav-logo">指圧サロン あまゆび</a>
@@ -182,8 +167,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
     <a href="https://lin.ee/egGw0OJ" target="_blank" class="nav-line-btn">💬 LINE予約</a>
   </div>
 </nav>
-
-<!-- HERO -->
 
 <section id="hero">
   <div class="hero-bg"></div>
@@ -203,8 +186,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
   </div>
   <div class="hero-scroll">SCROLL</div>
 </section>
-
-<!-- STORY -->
 
 <section id="story">
   <div class="section-inner">
@@ -227,8 +208,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
     </div>
   </div>
 </section>
-
-<!-- FEATURES -->
 
 <section id="features">
   <div class="section-inner">
@@ -254,8 +233,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
   </div>
 </section>
 
-<!-- STATS -->
-
 <section id="stats">
   <div class="section-inner">
     <div class="stats-grid">
@@ -275,11 +252,9 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
   </div>
 </section>
 
-<!-- MENU -->
-
 <section id="menu">
   <div class="section-inner">
-    <span class="section-label">Menu & Price</span>
+    <span class="section-label">Menu &amp; Price</span>
     <h2 class="section-title">メニュー</h2>
     <div class="menu-card">
       <div>
@@ -307,8 +282,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
   </div>
 </section>
 
-<!-- GALLERY -->
-
 <section id="gallery">
   <div class="section-inner">
     <span class="section-label">Gallery</span>
@@ -325,11 +298,9 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
   </div>
 </section>
 
-<!-- ACCESS -->
-
 <section id="access">
   <div class="section-inner">
-    <span class="section-label">Access & Info</span>
+    <span class="section-label">Access &amp; Info</span>
     <h2 class="section-title">アクセス・<br>店舗情報</h2>
     <div class="access-grid">
       <div>
@@ -359,8 +330,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
   </div>
 </section>
 
-<!-- CTA -->
-
 <section id="cta">
   <div class="cta-inner">
     <span class="section-label" style="display:block;text-align:center;margin-bottom:12px;">Reservation</span>
@@ -373,8 +342,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
   </div>
 </section>
 
-<!-- FOOTER -->
-
 <footer>
   <div class="footer-inner">
     <div class="footer-logo">指圧サロン あまゆび</div>
@@ -384,13 +351,10 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
   </div>
 </footer>
 
-<!-- ADMIN -->
-
 <button id="admin-toggle" onclick="toggleAdmin()" title="管理パネル">⚙️</button>
 
 <div id="admin-panel">
   <div class="admin-title">⚙️ 管理パネル</div>
-
   <div class="admin-section">
     <span class="admin-label">🏮 ヒーローメイン画像</span>
     <label class="admin-file-label">
@@ -398,7 +362,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
       <input type="file" accept="image/*" style="display:none;" onchange="uploadHeroImg(this)">
     </label>
   </div>
-
   <div class="admin-section">
     <span class="admin-label">🌿 サロン紹介画像</span>
     <label class="admin-file-label">
@@ -406,7 +369,6 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
       <input type="file" accept="image/*" style="display:none;" onchange="uploadStoryImg(this)">
     </label>
   </div>
-
   <div class="admin-section">
     <span class="admin-label">🖼️ ギャラリー画像（複数可）</span>
     <label class="admin-file-label">
@@ -415,71 +377,58 @@ footer{background:#0a0a0a;border-top:1px solid var(–bg3);padding:40px 24px;tex
     </label>
     <div class="admin-preview" id="adminPreview"></div>
   </div>
-
   <div class="admin-section">
-    <span class="admin-label">📢 お知らせテキスト（ヒーロー下）</span>
+    <span class="admin-label">📢 お知らせテキスト</span>
     <textarea class="admin-input" id="noticeText" rows="3" placeholder="例：夏季休業のお知らせ　8/10〜8/15"></textarea>
     <button class="admin-btn" onclick="applyNotice()">反映する</button>
   </div>
-
   <div class="admin-section">
-    <span class="admin-label">💾 現在のページをHTMLとして保存</span>
+    <span class="admin-label">💾 HTMLとして保存してGitHubにアップ</span>
     <button class="admin-btn" onclick="saveHTML()">📥 HTMLをダウンロード</button>
-    <p style="font-size:0.7rem;color:var(--muted);margin-top:6px;">※ 画像を埋め込んだHTMLが生成されます。これをGitHubにアップロードしてください。</p>
+    <p style="font-size:0.7rem;color:var(--muted);margin-top:6px;">※ 画像込みのHTMLが生成されます。GitHubに上書きアップしてください。</p>
   </div>
 </div>
 
 <script>
-// Admin toggle
 function toggleAdmin(){
-  const p=document.getElementById('admin-panel');
-  p.classList.toggle('open');
+  document.getElementById('admin-panel').classList.toggle('open');
 }
-
-// Hero image
 function uploadHeroImg(input){
-  const file=input.files[0];
+  var file=input.files[0];
   if(!file)return;
-  const r=new FileReader();
+  var r=new FileReader();
   r.onload=function(e){
-    const wrap=document.getElementById('heroImgWrap');
+    var wrap=document.getElementById('heroImgWrap');
     wrap.innerHTML='<img src="'+e.target.result+'" alt="サロンイメージ">';
   };
   r.readAsDataURL(file);
 }
-
-// Story image
 function uploadStoryImg(input){
-  const file=input.files[0];
+  var file=input.files[0];
   if(!file)return;
-  const r=new FileReader();
+  var r=new FileReader();
   r.onload=function(e){
-    const wrap=document.getElementById('storyImgWrap');
+    var wrap=document.getElementById('storyImgWrap');
     wrap.innerHTML='<img src="'+e.target.result+'" alt="サロン紹介">';
   };
   r.readAsDataURL(file);
 }
-
-// Gallery images
 function uploadGallery(input){
-  const files=Array.from(input.files);
-  const grid=document.getElementById('galleryGrid');
-  const preview=document.getElementById('adminPreview');
-  // clear placeholder items if needed
-  const existing=grid.querySelectorAll('.gallery-item');
-  let idx=0;
+  var files=Array.from(input.files);
+  var grid=document.getElementById('galleryGrid');
+  var preview=document.getElementById('adminPreview');
+  var existing=grid.querySelectorAll('.gallery-item');
+  var idx=0;
   files.forEach(function(file){
-    const r=new FileReader();
+    var r=new FileReader();
     r.onload=function(e){
-      // preview
-      const thumb=document.createElement('img');
+      var thumb=document.createElement('img');
       thumb.src=e.target.result;
       preview.appendChild(thumb);
-      // gallery
       if(idx<existing.length){
         existing[idx].innerHTML='<img src="'+e.target.result+'" alt="ギャラリー">';
       } else {
-        const item=document.createElement('div');
+        var item=document.createElement('div');
         item.className='gallery-item';
         item.innerHTML='<img src="'+e.target.result+'" alt="ギャラリー">';
         grid.appendChild(item);
@@ -489,12 +438,10 @@ function uploadGallery(input){
     r.readAsDataURL(file);
   });
 }
-
-// Notice
 function applyNotice(){
-  const txt=document.getElementById('noticeText').value.trim();
+  var txt=document.getElementById('noticeText').value.trim();
   if(!txt)return;
-  let notice=document.getElementById('hero-notice');
+  var notice=document.getElementById('hero-notice');
   if(!notice){
     notice=document.createElement('div');
     notice.id='hero-notice';
@@ -503,22 +450,18 @@ function applyNotice(){
   }
   notice.textContent='📢 '+txt;
 }
-
-// Save HTML with embedded images
 function saveHTML(){
-  const html=document.documentElement.outerHTML;
-  const blob=new Blob([html],{type:'text/html;charset=utf-8'});
-  const a=document.createElement('a');
+  var html=document.documentElement.outerHTML;
+  var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+  var a=document.createElement('a');
   a.href=URL.createObjectURL(blob);
   a.download='index.html';
   a.click();
 }
-
-// Smooth active nav highlight
-const sections=document.querySelectorAll('section[id]');
-const navLinks=document.querySelectorAll('.nav-links a');
+var sections=document.querySelectorAll('section[id]');
+var navLinks=document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll',function(){
-  let cur='';
+  var cur='';
   sections.forEach(function(s){
     if(window.scrollY>=s.offsetTop-100)cur=s.id;
   });
@@ -529,4 +472,4 @@ window.addEventListener('scroll',function(){
 </script>
 
 </body>
-</html> 
+</html>
